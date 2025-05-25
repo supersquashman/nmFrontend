@@ -1,0 +1,82 @@
+
+		<!-- <div id="Body"-->
+			<!-- <table cellspacing="0" cellpadding="8"> -->
+				<!-- <tr>
+					<td align="left" valign="top"> -->
+                        
+                        <form [formGroup]="characterInfo" (keydown.enter)="$event.preventDefault()">
+                            <label for="characterLevel">Character Level:&nbsp;</label>
+                            <input type="text" name="characterLevel" class="lscinput"
+                            formControlName="characterLevel" id="characterLevel"  (change)="updateTotals()">
+                            <div class="divTable minimalistBlack">
+                                <div class="divTableHeading">
+                                    <div class="divTableRow">
+                                        <div class="divTableHead">Stat</div>
+                                        <div class="divTableHead">Base</div>
+                                        <div class="divTableHead">LSC Points</div>
+                                        <div class="divTableHead">Total</div>
+                                        <div class="divTableHead">Remaining</div>
+                                    </div>
+                                </div>
+                                <div class="divTableBody">
+                                        <div class="divTableRow" *ngFor="let statName of statList">
+                                            <div class="divTableCell">
+                                                <label>{{statName | titlecase}}: </label>
+                                                <div >
+                                                    <div *ngIf="(genkai.get(statName) && !kagirinai.get(statName))">
+                                                        <div class="genkai_div">
+                                                            (Genkai)
+                                                        </div>
+                                                    </div>
+                                                    <div *ngIf="kagirinai.get(statName)">
+                                                        <div class="kagirinai_div">
+                                                            (Kagirinai)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divTableCell">
+                                                <div formGroupName="baseStats">
+                                                    <!-- <label for="str{{statName}}">{{statName | titlecase}}: </label> -->
+                                                    <input type="text" name="base{{statName}}" class="lscinput"
+                                                    formControlName="{{statName}}" id="base{{statName}}" (change)="updateTotals()">
+                                                </div>
+                                            </div>
+                                            <div class="divTableCell">
+                                                <div formGroupName="lscPoints">
+                                                    <!-- <label for="str{{statName}}">{{statName | titlecase}}: </label> -->
+                                                    <input type="text" name="lsc{{statName}}" class="lscinput"
+                                                    formControlName="{{statName}}" id="lsc{{statName}}" (change)="updateTotals()">
+                                                </div>
+                                            </div>
+                                            <div class="divTableCell">
+                                                <div formGroupName="coreTotal">
+                                                    <!-- <label for="str{{statName}}">{{statName | titlecase}}: </label> -->
+                                                    <input type="text" name="total{{statName}}" class="lscinput non_editdable"
+                                                    formControlName="{{statName}}" id="total{{statName}}" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="divTableCell">
+                                                <div formGroupName="remainingPoints">
+                                                    <!-- <label for="str{{statName}}">{{statName | titlecase}}: </label> -->
+                                                    <input type="text" name="rmn{{statName}}" class="lscinput non_editdable"
+                                                    formControlName="{{statName}}" id="rmn{{statName}}" readonly>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- error div -->
+                                <label *ngIf="genkaiCount>maxGenkais && genkaiCount>0" class="error_label">Too many Genkais ({{genkaiCount}}/{{maxGenkais}})</label><br/>
+                                <label *ngIf="kagirinaiCount>maxKagirinais && kagirinaiCount>0" class="error_label">Too many Kagirinai</label>
+                            </div>
+                            <button (click)="resetValues(); $event.preventDefault()">Reset</button>
+                        </form>
+                     <!-- </td>
+                </tr> -->
+			<!-- </table> -->
+		
+		<!--/div> -->

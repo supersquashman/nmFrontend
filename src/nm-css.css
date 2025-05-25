@@ -1,12 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 .navbar
 {
-	position:relative;
 	margin-left: 18%;
 	margin-right: 13%;
-	top: 140px;
-	/* left: 334px; */
-
+	top: 540px;
 }
 
 .tabbedmenu
@@ -97,7 +93,7 @@
 	height: auto;
 	z-index:2;
 	left: 18%;
-	top: 159px;
+	top: 189px;
 	border: 1px solid #CC00FF;
 }
 
@@ -136,7 +132,7 @@
 }
 
 #Title {
-	position: relative;
+	position: absolute;
 	background-image: url("assets/images/NarutoMUD-Banner5.png");
 	background-repeat: no-repeat;
 	height: 92px; 
@@ -183,94 +179,4 @@ a:hover
 {
 	text-decoration: none;
 }
-
-.lscinput
-{
-	padding: 6px 12px;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.5;
-	width: 25px;
-	color: #212529;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid #ced4da;
-	appearance: none;
-	border-radius: 4px;
-	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-	:focus{
-		color: #212529;
-		background-color: #fff;
-		border-color: #86b7fe;
-		outline: 0;
-		box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-	}
-}
-
-.non_editdable{
-	background: #CFCFCF;
-}
-
-.lsc_table_cell
-{
-	border: 1xp solid #000000;
-	width: 8%
-
-}
-
-.lsc_table
-{
-	border: 2px solid #000000;
-	width: 60%;
-	border-collapse: collapse;
-}
-
-.genkai_div{
-	color:blue;
-}
-
-.error_label{
-	color:purple;
-}
-
-.kagirinai_div{
-	color: #009819;
-}
-
-div.minimalistBlack {
-	border: 3px solid #000000;
-	width: 100%;
-	text-align: center;
-	border-collapse: collapse;
-  }
-  .divTable.minimalistBlack .divTableCell, .divTable.minimalistBlack .divTableHead {
-	border: 1px solid #000000;
-	padding: 5px 4px;
-  }
-  .divTable.minimalistBlack .divTableBody .divTableCell {
-	font-size: 14px;
-  }
-  .divTableCell{
-	width: 20%;
-  }
-  .divTable.minimalistBlack .divTableHeading {
-	  border-bottom: 3px solid #000000;
-  }
-  .divTable.minimalistBlack .divTableHeading .divTableHead {
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	text-align: center;
-  }
-  .minimalistBlack .tableFootStyle {
-	font-size: 14px;
-  }
-  /* DivTable.com */
-  .divTable{ display: table; }
-  .divTableRow { display: table-row; }
-  .divTableHeading { display: table-header-group;}
-  .divTableCell, .divTableHead { display: table-cell;}
-  .divTableHeading { display: table-header-group;}
-  .divTableFoot { display: table-footer-group;}
-  .divTableBody { display: table-row-group;}
 /* {font-family:Georgia, "Times New Roman", Times, serif;} */

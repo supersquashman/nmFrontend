@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/faq",
+    "/home",
+    "/links",
+    "/lsc-calculator",
+    "/nm-map",
+    "/staff",
+    "/trello-board"
+  ]
+}
